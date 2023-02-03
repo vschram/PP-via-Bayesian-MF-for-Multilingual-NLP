@@ -1,0 +1,969 @@
+INFO - 01/27/23 15:19:09 - 0:00:00 - ####################################################################################################
+INFO - 01/27/23 15:19:09 - 0:00:00 - Start: Task: tsfmt_MF | model: BPMF | attribute: None | context: None | debug: 0 |
+INFO - 01/27/23 15:19:09 - 0:00:00 - ####################################################################################################
+INFO - 01/27/23 15:19:09 - 0:00:00 - hyperparameters:
+INFO - 01/27/23 15:19:09 - 0:00:00 - ALPHA (precision) = [2]
+INFO - 01/27/23 15:19:09 - 0:00:00 - leading to... 1 different hyperparameter settings
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - ++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO - 01/27/23 15:19:09 - 0:00:00 - Starting run 1
+INFO - 01/27/23 15:19:09 - 0:00:00 - ++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - Scores: BLEU using NCV
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - 	NCV, Fold 1: 
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - Only one hyperparam setting, no optimization needed
+INFO - 01/27/23 15:19:09 - 0:00:00 - --------------------
+INFO - 01/27/23 15:19:09 - 0:00:00 - Which is always true, because we have BPMF
+INFO - 01/27/23 15:19:09 - 0:00:00 - --------------------
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - ********************
+INFO - 01/27/23 15:19:09 - 0:00:00 - building the BPMF model
+DEBUG - 01/27/23 15:19:10 - 0:00:01 - Attempting to acquire lock 47147717880080 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:10 - 0:00:01 - Lock 47147717880080 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:10 - 0:00:02 - Attempting to release lock 47147717880080 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:10 - 0:00:02 - Lock 47147717880080 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:11 - 0:00:02 - Attempting to acquire lock 47147735275264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:11 - 0:00:02 - Lock 47147735275264 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:12 - 0:00:03 - Attempting to release lock 47147735275264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:12 - 0:00:03 - Lock 47147735275264 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:12 - 0:00:03 - Attempting to acquire lock 47147737882528 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:12 - 0:00:03 - Lock 47147737882528 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147737882528 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147737882528 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147744317792 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744317792 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147744317792 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744317792 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147737933664 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147737933664 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147737933664 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147737933664 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147744517808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744517808 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147744517808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744517808 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147744321488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744321488 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147744321488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744321488 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147744553184 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744553184 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147744553184 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744553184 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147744498928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744498928 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147744498928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147744498928 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147765773312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147765773312 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147765773312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147765773312 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147782956704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147782956704 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147782956704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147782956704 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147782882544 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147782882544 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147782882544 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147782882544 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147765928672 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147765928672 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to release lock 47147765928672 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147765928672 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Attempting to acquire lock 47147817052240 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:05 - Lock 47147817052240 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:06 - Attempting to release lock 47147817052240 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:14 - 0:00:06 - Lock 47147817052240 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Attempting to acquire lock 47147837127696 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Lock 47147837127696 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Attempting to release lock 47147837127696 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Lock 47147837127696 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Attempting to acquire lock 47147843377664 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:15 - 0:00:06 - Lock 47147843377664 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147843377664 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843377664 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47147843219808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843219808 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147843219808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843219808 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47147843377376 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843377376 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147843377376 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843377376 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47147843349232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843349232 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147843349232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147843349232 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47147846397280 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147846397280 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147846397280 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147846397280 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148014530464 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014530464 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148014530464 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014530464 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47147846486768 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147846486768 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47147846486768 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47147846486768 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148014558176 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014558176 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148014558176 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014558176 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148031628624 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148031628624 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148031628624 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148031628624 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148014558752 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014558752 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148014558752 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148014558752 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148034212096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148034212096 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148034212096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148034212096 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to acquire lock 47148034122272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148034122272 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Attempting to release lock 47148034122272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:16 - 0:00:07 - Lock 47148034122272 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47148062971600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148062971600 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47148062971600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148062971600 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47148067272640 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148067272640 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47148067272640 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148067272640 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 15:19:18 - 0:00:09 - ********************
+INFO - 01/27/23 15:19:18 - 0:00:09 - done building the BPMF model
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147839429312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147839429312 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147839429312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147839429312 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147841862384 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841862384 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147841862384 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841862384 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147841829184 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841829184 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147841829184 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841829184 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147839494464 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147839494464 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147839494464 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147839494464 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147841804848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841804848 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147841804848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147841804848 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47147842052048 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147842052048 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47147842052048 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47147842052048 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47148062223232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148062223232 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47148062223232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148062223232 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to acquire lock 47148059422192 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148059422192 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Attempting to release lock 47148059422192 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:18 - 0:00:09 - Lock 47148059422192 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to acquire lock 47148058275952 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47148058275952 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to release lock 47148058275952 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47148058275952 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to acquire lock 47147837184128 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147837184128 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to release lock 47147837184128 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147837184128 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to acquire lock 47147837003616 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147837003616 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to release lock 47147837003616 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147837003616 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to acquire lock 47147834602784 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147834602784 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to release lock 47147834602784 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147834602784 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Attempting to acquire lock 47147837003520 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:10 - Lock 47147837003520 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:11 - Attempting to release lock 47147837003520 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:19 - 0:00:11 - Lock 47147837003520 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Attempting to acquire lock 47147744467888 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Lock 47147744467888 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Attempting to release lock 47147744467888 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Lock 47147744467888 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Attempting to acquire lock 47147834622112 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Lock 47147834622112 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Attempting to release lock 47147834622112 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:11 - Lock 47147834622112 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to acquire lock 47148237165472 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148237165472 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to release lock 47148237165472 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148237165472 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to acquire lock 47148237235488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148237235488 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to release lock 47148237235488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148237235488 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to acquire lock 47147783108928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47147783108928 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to release lock 47147783108928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47147783108928 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to acquire lock 47148236608704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148236608704 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to release lock 47148236608704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148236608704 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to acquire lock 47148236818272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148236818272 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Attempting to release lock 47148236818272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:20 - 0:00:12 - Lock 47148236818272 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 15:19:20 - 0:00:12 - Auto-assigning NUTS sampler...
+INFO - 01/27/23 15:19:20 - 0:00:12 - Initializing NUTS using adapt_diag...
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148237635008 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237635008 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148237635008 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237635008 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148237567408 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237567408 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148237567408 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237567408 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148248344176 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148248344176 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148248344176 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148248344176 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148237645616 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237645616 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148237645616 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148237645616 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148236445488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148236445488 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148236445488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148236445488 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148253888912 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253888912 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148253888912 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253888912 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148253794208 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253794208 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148253794208 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253794208 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148253889920 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253889920 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148253889920 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253889920 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148256374992 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148256374992 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148256374992 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148256374992 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148267094368 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148267094368 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148267094368 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148267094368 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148253891216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253891216 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148253891216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148253891216 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148271624928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148271624928 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148271624928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148271624928 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148286723072 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148286723072 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to release lock 47148286723072 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148286723072 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Attempting to acquire lock 47148295938160 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:12 - Lock 47148295938160 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Attempting to release lock 47148295938160 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Lock 47148295938160 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Attempting to acquire lock 47148293241920 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Lock 47148293241920 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Attempting to release lock 47148293241920 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Lock 47148293241920 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Attempting to acquire lock 47148295941808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Lock 47148295941808 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Attempting to release lock 47148295941808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:21 - 0:00:13 - Lock 47148295941808 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148293458528 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293458528 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148293458528 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293458528 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148321728448 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148321728448 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148321728448 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148321728448 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148308737376 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308737376 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148308737376 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308737376 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148308931392 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308931392 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148308931392 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308931392 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148308737904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308737904 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148308737904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148308737904 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148293351072 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293351072 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148293351072 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293351072 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148293648096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293648096 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148293648096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148293648096 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148321675872 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148321675872 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148321675872 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148321675872 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148347409216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347409216 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148347409216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347409216 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148347358128 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347358128 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148347358128 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347358128 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148271605552 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148271605552 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148271605552 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148271605552 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148367077328 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148367077328 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148367077328 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148367077328 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47147834647264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47147834647264 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47147834647264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47147834647264 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148367096272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148367096272 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148367096272 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148367096272 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to acquire lock 47148347484144 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347484144 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Attempting to release lock 47148347484144 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:22 - 0:00:13 - Lock 47148347484144 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377624048 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377624048 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377624048 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377624048 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377736096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377736096 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377736096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377736096 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377792320 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377792320 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377792320 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377792320 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377738448 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377738448 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377738448 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377738448 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377903168 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377903168 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377903168 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377903168 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377565264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377565264 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377565264 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377565264 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377634848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377634848 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377634848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377634848 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148377623232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377623232 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148377623232 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148377623232 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148392915824 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148392915824 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to release lock 47148392915824 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148392915824 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Attempting to acquire lock 47148237548560 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:15 - Lock 47148237548560 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Attempting to release lock 47148237548560 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Lock 47148237548560 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Attempting to acquire lock 47148377922960 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Lock 47148377922960 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Attempting to release lock 47148377922960 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Lock 47148377922960 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Attempting to acquire lock 47148397403248 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Lock 47148397403248 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Attempting to release lock 47148397403248 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:24 - 0:00:16 - Lock 47148397403248 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47147737882432 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47147737882432 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47147737882432 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47147737882432 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47148404400032 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404400032 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47148404400032 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404400032 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47148404399312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404399312 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47148404399312 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404399312 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47148404359904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404359904 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47148404359904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404359904 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47148404564992 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404564992 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47148404564992 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404564992 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to acquire lock 47148404573808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404573808 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Attempting to release lock 47148404573808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:16 - Lock 47148404573808 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Attempting to acquire lock 47148409800640 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Lock 47148409800640 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Attempting to release lock 47148409800640 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Lock 47148409800640 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Attempting to acquire lock 47148433250288 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:25 - 0:00:17 - Lock 47148433250288 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to release lock 47148433250288 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148433250288 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to acquire lock 47148433175600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148433175600 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to release lock 47148433175600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148433175600 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to acquire lock 47148465781968 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148465781968 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to release lock 47148465781968 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148465781968 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to acquire lock 47148457087088 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148457087088 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to release lock 47148457087088 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148457087088 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to acquire lock 47148433279536 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148433279536 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Attempting to release lock 47148433279536 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:26 - 0:00:17 - Lock 47148433279536 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 15:19:28 - 0:00:20 - Sequential sampling (2 chains in 1 job)
+INFO - 01/27/23 15:19:28 - 0:00:20 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+DEBUG - 01/27/23 15:19:28 - 0:00:20 - Attempting to acquire lock 47148471160944 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:28 - 0:00:20 - Lock 47148471160944 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Attempting to release lock 47148471160944 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Lock 47148471160944 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Attempting to acquire lock 47148471135488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Lock 47148471135488 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Attempting to release lock 47148471135488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 15:19:29 - 0:00:20 - Lock 47148471135488 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 17:11:36 - 1:52:27 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6728 seconds.
+ERROR - 01/27/23 17:11:51 - 1:52:42 - There were 526 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 17:11:51 - 1:52:42 - The acceptance probability does not match the target. It is 0.6765134634275507, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 17:11:51 - 1:52:42 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 17:11:51 - 1:52:42 - There were 1133 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 17:11:51 - 1:52:42 - The acceptance probability does not match the target. It is 0.5981934498275955, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 17:11:51 - 1:52:42 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 17:11:51 - 1:52:42 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/27/23 17:11:51 - 1:52:42 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/27/23 17:12:06 - 1:52:57 - --------------------
+INFO - 01/27/23 17:12:06 - 1:52:57 - Outer CV fold: 1 || run: 1
+INFO - 01/27/23 17:12:06 - 1:52:57 - --------------------
+INFO - 01/27/23 17:12:06 - 1:52:57 - Posterior predictive train RMSE: 0.41249
+INFO - 01/27/23 17:12:06 - 1:52:57 - Posterior predictive test RMSE:  1.41395
+INFO - 01/27/23 17:12:06 - 1:52:57 - Train/test difference:           1.00146
+INFO - 01/27/23 17:12:06 - 1:52:57 - --------------------
+INFO - 01/27/23 17:12:06 - 1:52:57 - ********************
+INFO - 01/27/23 17:12:06 - 1:52:57 - 		(Outer Fold 1) train RMSE is 0.412485888305462.
+INFO - 01/27/23 17:12:06 - 1:52:57 - 		(Outer Fold 1) test RMSE is 1.4139492787983556.
+INFO - 01/27/23 17:12:06 - 1:52:57 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/27/23 17:12:06 - 1:52:57 - ********************
+INFO - 01/27/23 17:12:06 - 1:52:57 - 	NCV, Fold 2: 
+INFO - 01/27/23 17:12:06 - 1:52:57 - ********************
+INFO - 01/27/23 17:12:06 - 1:52:57 - Only one hyperparam setting, no optimization needed
+INFO - 01/27/23 17:12:06 - 1:52:57 - --------------------
+INFO - 01/27/23 17:12:06 - 1:52:57 - Which is always true, because we have BPMF
+INFO - 01/27/23 17:12:06 - 1:52:57 - --------------------
+INFO - 01/27/23 17:12:06 - 1:52:57 - ********************
+INFO - 01/27/23 17:12:06 - 1:52:57 - ********************
+INFO - 01/27/23 17:12:06 - 1:52:57 - building the BPMF model
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Attempting to acquire lock 47147765931888 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Lock 47147765931888 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Attempting to release lock 47147765931888 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Lock 47147765931888 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Attempting to acquire lock 47147765931984 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Lock 47147765931984 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Attempting to release lock 47147765931984 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 17:12:07 - 1:52:58 - Lock 47147765931984 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 17:12:07 - 1:52:58 - ********************
+INFO - 01/27/23 17:12:07 - 1:52:58 - done building the BPMF model
+INFO - 01/27/23 17:12:09 - 1:53:00 - Auto-assigning NUTS sampler...
+INFO - 01/27/23 17:12:09 - 1:53:00 - Initializing NUTS using adapt_diag...
+INFO - 01/27/23 17:12:14 - 1:53:05 - Sequential sampling (2 chains in 1 job)
+INFO - 01/27/23 17:12:14 - 1:53:05 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/27/23 19:03:37 - 3:44:28 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6684 seconds.
+ERROR - 01/27/23 19:03:52 - 3:44:43 - There were 376 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 19:03:52 - 3:44:43 - The acceptance probability does not match the target. It is 0.7125222232982734, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 19:03:52 - 3:44:43 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 19:03:52 - 3:44:43 - There were 904 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 19:03:52 - 3:44:43 - The acceptance probability does not match the target. It is 0.7163738836994903, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 19:03:52 - 3:44:43 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 19:03:52 - 3:44:43 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/27/23 19:03:52 - 3:44:43 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/27/23 19:04:03 - 3:44:54 - --------------------
+INFO - 01/27/23 19:04:03 - 3:44:54 - Outer CV fold: 2 || run: 1
+INFO - 01/27/23 19:04:03 - 3:44:54 - --------------------
+INFO - 01/27/23 19:04:03 - 3:44:54 - Posterior predictive train RMSE: 0.43647
+INFO - 01/27/23 19:04:03 - 3:44:54 - Posterior predictive test RMSE:  1.68792
+INFO - 01/27/23 19:04:03 - 3:44:54 - Train/test difference:           1.25145
+INFO - 01/27/23 19:04:03 - 3:44:54 - --------------------
+INFO - 01/27/23 19:04:03 - 3:44:54 - ********************
+INFO - 01/27/23 19:04:03 - 3:44:54 - 		(Outer Fold 2) train RMSE is 0.43646599906483624.
+INFO - 01/27/23 19:04:03 - 3:44:54 - 		(Outer Fold 2) test RMSE is 1.6879161362459685.
+INFO - 01/27/23 19:04:03 - 3:44:54 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/27/23 19:04:03 - 3:44:54 - ********************
+INFO - 01/27/23 19:04:03 - 3:44:54 - 	NCV, Fold 3: 
+INFO - 01/27/23 19:04:03 - 3:44:54 - ********************
+INFO - 01/27/23 19:04:03 - 3:44:54 - Only one hyperparam setting, no optimization needed
+INFO - 01/27/23 19:04:03 - 3:44:54 - --------------------
+INFO - 01/27/23 19:04:03 - 3:44:54 - Which is always true, because we have BPMF
+INFO - 01/27/23 19:04:03 - 3:44:54 - --------------------
+INFO - 01/27/23 19:04:03 - 3:44:54 - ********************
+INFO - 01/27/23 19:04:03 - 3:44:54 - ********************
+INFO - 01/27/23 19:04:03 - 3:44:54 - building the BPMF model
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Attempting to acquire lock 47148070750144 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Lock 47148070750144 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Attempting to release lock 47148070750144 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Lock 47148070750144 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Attempting to acquire lock 47148441929520 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Lock 47148441929520 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Attempting to release lock 47148441929520 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 19:04:05 - 3:44:56 - Lock 47148441929520 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 19:04:05 - 3:44:56 - ********************
+INFO - 01/27/23 19:04:05 - 3:44:56 - done building the BPMF model
+INFO - 01/27/23 19:04:05 - 3:44:56 - Auto-assigning NUTS sampler...
+INFO - 01/27/23 19:04:05 - 3:44:56 - Initializing NUTS using adapt_diag...
+INFO - 01/27/23 19:04:09 - 3:45:00 - Sequential sampling (2 chains in 1 job)
+INFO - 01/27/23 19:04:09 - 3:45:00 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/27/23 20:49:49 - 5:30:40 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6340 seconds.
+ERROR - 01/27/23 20:50:06 - 5:30:57 - There were 562 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 20:50:06 - 5:30:57 - The acceptance probability does not match the target. It is 0.6596370377560878, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 20:50:06 - 5:30:57 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 20:50:06 - 5:30:57 - There were 1258 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 20:50:06 - 5:30:57 - The acceptance probability does not match the target. It is 0.6268746214137491, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 20:50:06 - 5:30:57 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 20:50:06 - 5:30:57 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/27/23 20:50:06 - 5:30:57 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/27/23 20:50:18 - 5:31:09 - --------------------
+INFO - 01/27/23 20:50:18 - 5:31:09 - Outer CV fold: 3 || run: 1
+INFO - 01/27/23 20:50:18 - 5:31:09 - --------------------
+INFO - 01/27/23 20:50:18 - 5:31:09 - Posterior predictive train RMSE: 0.42472
+INFO - 01/27/23 20:50:18 - 5:31:09 - Posterior predictive test RMSE:  1.68381
+INFO - 01/27/23 20:50:18 - 5:31:09 - Train/test difference:           1.25909
+INFO - 01/27/23 20:50:18 - 5:31:09 - --------------------
+INFO - 01/27/23 20:50:18 - 5:31:09 - ********************
+INFO - 01/27/23 20:50:18 - 5:31:09 - 		(Outer Fold 3) train RMSE is 0.4247162588632053.
+INFO - 01/27/23 20:50:18 - 5:31:09 - 		(Outer Fold 3) test RMSE is 1.6838078357528092.
+INFO - 01/27/23 20:50:18 - 5:31:09 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/27/23 20:50:18 - 5:31:09 - ********************
+INFO - 01/27/23 20:50:18 - 5:31:09 - 	NCV, Fold 4: 
+INFO - 01/27/23 20:50:18 - 5:31:09 - ********************
+INFO - 01/27/23 20:50:18 - 5:31:09 - Only one hyperparam setting, no optimization needed
+INFO - 01/27/23 20:50:18 - 5:31:09 - --------------------
+INFO - 01/27/23 20:50:18 - 5:31:09 - Which is always true, because we have BPMF
+INFO - 01/27/23 20:50:18 - 5:31:09 - --------------------
+INFO - 01/27/23 20:50:18 - 5:31:09 - ********************
+INFO - 01/27/23 20:50:18 - 5:31:09 - ********************
+INFO - 01/27/23 20:50:18 - 5:31:09 - building the BPMF model
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Attempting to acquire lock 47148791572416 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Lock 47148791572416 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Attempting to release lock 47148791572416 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Lock 47148791572416 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Attempting to acquire lock 47148791599216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Lock 47148791599216 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Attempting to release lock 47148791599216 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 20:50:19 - 5:31:10 - Lock 47148791599216 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 20:50:19 - 5:31:10 - ********************
+INFO - 01/27/23 20:50:19 - 5:31:10 - done building the BPMF model
+INFO - 01/27/23 20:50:20 - 5:31:11 - Auto-assigning NUTS sampler...
+INFO - 01/27/23 20:50:20 - 5:31:11 - Initializing NUTS using adapt_diag...
+INFO - 01/27/23 20:50:23 - 5:31:14 - Sequential sampling (2 chains in 1 job)
+INFO - 01/27/23 20:50:23 - 5:31:14 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/27/23 22:29:57 - 7:10:48 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 5974 seconds.
+ERROR - 01/27/23 22:30:13 - 7:11:04 - There were 542 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 22:30:13 - 7:11:04 - The acceptance probability does not match the target. It is 0.7091245440025964, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 22:30:13 - 7:11:04 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 22:30:13 - 7:11:04 - There were 1272 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/27/23 22:30:13 - 7:11:04 - The acceptance probability does not match the target. It is 0.6164659960248494, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/27/23 22:30:13 - 7:11:04 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/27/23 22:30:13 - 7:11:04 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/27/23 22:30:13 - 7:11:04 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/27/23 22:30:25 - 7:11:16 - --------------------
+INFO - 01/27/23 22:30:25 - 7:11:16 - Outer CV fold: 4 || run: 1
+INFO - 01/27/23 22:30:25 - 7:11:16 - --------------------
+INFO - 01/27/23 22:30:25 - 7:11:16 - Posterior predictive train RMSE: 0.44361
+INFO - 01/27/23 22:30:25 - 7:11:16 - Posterior predictive test RMSE:  1.52548
+INFO - 01/27/23 22:30:25 - 7:11:16 - Train/test difference:           1.08187
+INFO - 01/27/23 22:30:25 - 7:11:16 - --------------------
+INFO - 01/27/23 22:30:25 - 7:11:16 - ********************
+INFO - 01/27/23 22:30:25 - 7:11:16 - 		(Outer Fold 4) train RMSE is 0.4436062534540529.
+INFO - 01/27/23 22:30:25 - 7:11:16 - 		(Outer Fold 4) test RMSE is 1.525475734277645.
+INFO - 01/27/23 22:30:25 - 7:11:16 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/27/23 22:30:25 - 7:11:16 - ********************
+INFO - 01/27/23 22:30:25 - 7:11:16 - 	NCV, Fold 5: 
+INFO - 01/27/23 22:30:25 - 7:11:16 - ********************
+INFO - 01/27/23 22:30:25 - 7:11:16 - Only one hyperparam setting, no optimization needed
+INFO - 01/27/23 22:30:25 - 7:11:16 - --------------------
+INFO - 01/27/23 22:30:25 - 7:11:16 - Which is always true, because we have BPMF
+INFO - 01/27/23 22:30:25 - 7:11:16 - --------------------
+INFO - 01/27/23 22:30:25 - 7:11:16 - ********************
+INFO - 01/27/23 22:30:25 - 7:11:16 - ********************
+INFO - 01/27/23 22:30:25 - 7:11:16 - building the BPMF model
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Attempting to acquire lock 47148904458608 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Lock 47148904458608 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Attempting to release lock 47148904458608 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Lock 47148904458608 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Attempting to acquire lock 47148904103504 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Lock 47148904103504 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Attempting to release lock 47148904103504 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/27/23 22:30:26 - 7:11:17 - Lock 47148904103504 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/27/23 22:30:26 - 7:11:17 - ********************
+INFO - 01/27/23 22:30:26 - 7:11:17 - done building the BPMF model
+INFO - 01/27/23 22:30:27 - 7:11:18 - Auto-assigning NUTS sampler...
+INFO - 01/27/23 22:30:27 - 7:11:18 - Initializing NUTS using adapt_diag...
+INFO - 01/27/23 22:30:31 - 7:11:22 - Sequential sampling (2 chains in 1 job)
+INFO - 01/27/23 22:30:31 - 7:11:22 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 00:22:05 - 9:02:57 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6694 seconds.
+ERROR - 01/28/23 00:22:18 - 9:03:09 - There were 420 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 00:22:18 - 9:03:09 - The acceptance probability does not match the target. It is 0.7103783542732842, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 00:22:18 - 9:03:09 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 00:22:18 - 9:03:09 - There were 844 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 00:22:18 - 9:03:09 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 00:22:18 - 9:03:09 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 00:22:18 - 9:03:09 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - Outer CV fold: 5 || run: 1
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - Posterior predictive train RMSE: 0.41772
+INFO - 01/28/23 00:22:29 - 9:03:21 - Posterior predictive test RMSE:  1.65329
+INFO - 01/28/23 00:22:29 - 9:03:21 - Train/test difference:           1.23557
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:29 - 9:03:21 - 		(Outer Fold 5) train RMSE is 0.4177222732474348.
+INFO - 01/28/23 00:22:29 - 9:03:21 - 		(Outer Fold 5) test RMSE is 1.6532905330477925.
+INFO - 01/28/23 00:22:29 - 9:03:21 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 00:22:29 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:29 - 9:03:21 - #################################
+INFO - 01/28/23 00:22:29 - 9:03:21 - -----per K-folds for BLEU-----
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse: 1.5928879036245143
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse_std: 0.10724617356842582
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse_train: 0.4269993345869983
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse_train_std: 0.011552695922757846
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse_dev: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - final_rmse_dev_std: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - median_alpha: 2.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - #################################
+INFO - 01/28/23 00:22:29 - 9:03:21 - #################################
+INFO - 01/28/23 00:22:29 - 9:03:21 - -----Per model: ['BLEU']-----
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model rmse: 1.5928879036245143
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model rmse std: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model train: 0.4269993345869983
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model train std: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model dev: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - average model dev std: 0.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - --------------------------------
+INFO - 01/28/23 00:22:29 - 9:03:21 - median model alpha: 2.0
+INFO - 01/28/23 00:22:29 - 9:03:21 - #################################
+INFO - 01/28/23 00:22:29 - 9:03:21 - ++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO - 01/28/23 00:22:29 - 9:03:21 - Starting run 2
+INFO - 01/28/23 00:22:29 - 9:03:21 - ++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO - 01/28/23 00:22:30 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:30 - 9:03:21 - Scores: BLEU using NCV
+INFO - 01/28/23 00:22:30 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:30 - 9:03:21 - 	NCV, Fold 1: 
+INFO - 01/28/23 00:22:30 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:30 - 9:03:21 - Only one hyperparam setting, no optimization needed
+INFO - 01/28/23 00:22:30 - 9:03:21 - --------------------
+INFO - 01/28/23 00:22:30 - 9:03:21 - Which is always true, because we have BPMF
+INFO - 01/28/23 00:22:30 - 9:03:21 - --------------------
+INFO - 01/28/23 00:22:30 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:30 - 9:03:21 - ********************
+INFO - 01/28/23 00:22:30 - 9:03:21 - building the BPMF model
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Attempting to acquire lock 47149016059856 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Lock 47149016059856 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Attempting to release lock 47149016059856 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Lock 47149016059856 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Attempting to acquire lock 47149016135808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Lock 47149016135808 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Attempting to release lock 47149016135808 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 00:22:31 - 9:03:22 - Lock 47149016135808 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 00:22:31 - 9:03:22 - ********************
+INFO - 01/28/23 00:22:31 - 9:03:22 - done building the BPMF model
+INFO - 01/28/23 00:22:31 - 9:03:22 - Auto-assigning NUTS sampler...
+INFO - 01/28/23 00:22:31 - 9:03:22 - Initializing NUTS using adapt_diag...
+INFO - 01/28/23 00:22:35 - 9:03:26 - Sequential sampling (2 chains in 1 job)
+INFO - 01/28/23 00:22:35 - 9:03:26 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 02:11:05 - 10:51:57 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6510 seconds.
+ERROR - 01/28/23 02:11:22 - 10:52:13 - There were 373 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 02:11:22 - 10:52:13 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 02:11:22 - 10:52:13 - There were 995 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 02:11:22 - 10:52:13 - The acceptance probability does not match the target. It is 0.6310365777896619, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 02:11:22 - 10:52:13 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 02:11:22 - 10:52:13 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 02:11:22 - 10:52:13 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 02:11:34 - 10:52:25 - --------------------
+INFO - 01/28/23 02:11:34 - 10:52:25 - Outer CV fold: 1 || run: 2
+INFO - 01/28/23 02:11:34 - 10:52:25 - --------------------
+INFO - 01/28/23 02:11:34 - 10:52:25 - Posterior predictive train RMSE: 0.46260
+INFO - 01/28/23 02:11:34 - 10:52:25 - Posterior predictive test RMSE:  1.70889
+INFO - 01/28/23 02:11:34 - 10:52:25 - Train/test difference:           1.24629
+INFO - 01/28/23 02:11:34 - 10:52:25 - --------------------
+INFO - 01/28/23 02:11:34 - 10:52:25 - ********************
+INFO - 01/28/23 02:11:34 - 10:52:25 - 		(Outer Fold 1) train RMSE is 0.46260407424305683.
+INFO - 01/28/23 02:11:34 - 10:52:25 - 		(Outer Fold 1) test RMSE is 1.7088941342859276.
+INFO - 01/28/23 02:11:34 - 10:52:25 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 02:11:34 - 10:52:25 - ********************
+INFO - 01/28/23 02:11:34 - 10:52:25 - 	NCV, Fold 2: 
+INFO - 01/28/23 02:11:34 - 10:52:25 - ********************
+INFO - 01/28/23 02:11:34 - 10:52:25 - Only one hyperparam setting, no optimization needed
+INFO - 01/28/23 02:11:34 - 10:52:25 - --------------------
+INFO - 01/28/23 02:11:34 - 10:52:25 - Which is always true, because we have BPMF
+INFO - 01/28/23 02:11:34 - 10:52:25 - --------------------
+INFO - 01/28/23 02:11:34 - 10:52:25 - ********************
+INFO - 01/28/23 02:11:34 - 10:52:25 - ********************
+INFO - 01/28/23 02:11:34 - 10:52:25 - building the BPMF model
+DEBUG - 01/28/23 02:11:35 - 10:52:27 - Attempting to acquire lock 47149018881904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Lock 47149018881904 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Attempting to release lock 47149018881904 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Lock 47149018881904 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Attempting to acquire lock 47149019214704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Lock 47149019214704 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Attempting to release lock 47149019214704 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 02:11:36 - 10:52:27 - Lock 47149019214704 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 02:11:36 - 10:52:27 - ********************
+INFO - 01/28/23 02:11:36 - 10:52:27 - done building the BPMF model
+INFO - 01/28/23 02:11:36 - 10:52:27 - Auto-assigning NUTS sampler...
+INFO - 01/28/23 02:11:36 - 10:52:27 - Initializing NUTS using adapt_diag...
+INFO - 01/28/23 02:11:41 - 10:52:32 - Sequential sampling (2 chains in 1 job)
+INFO - 01/28/23 02:11:41 - 10:52:32 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 04:03:45 - 12:44:37 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 6725 seconds.
+ERROR - 01/28/23 04:04:02 - 12:44:53 - There were 417 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 04:04:02 - 12:44:53 - The acceptance probability does not match the target. It is 0.7126560698617955, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 04:04:02 - 12:44:53 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 04:04:02 - 12:44:53 - There were 876 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 04:04:02 - 12:44:53 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 04:04:02 - 12:44:53 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 04:04:02 - 12:44:53 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 04:04:14 - 12:45:05 - --------------------
+INFO - 01/28/23 04:04:14 - 12:45:05 - Outer CV fold: 2 || run: 2
+INFO - 01/28/23 04:04:14 - 12:45:05 - --------------------
+INFO - 01/28/23 04:04:14 - 12:45:05 - Posterior predictive train RMSE: 0.40684
+INFO - 01/28/23 04:04:14 - 12:45:05 - Posterior predictive test RMSE:  1.54775
+INFO - 01/28/23 04:04:14 - 12:45:05 - Train/test difference:           1.14091
+INFO - 01/28/23 04:04:14 - 12:45:05 - --------------------
+INFO - 01/28/23 04:04:14 - 12:45:05 - ********************
+INFO - 01/28/23 04:04:14 - 12:45:05 - 		(Outer Fold 2) train RMSE is 0.4068434105338186.
+INFO - 01/28/23 04:04:14 - 12:45:05 - 		(Outer Fold 2) test RMSE is 1.547750820454093.
+INFO - 01/28/23 04:04:14 - 12:45:05 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 04:04:14 - 12:45:05 - ********************
+INFO - 01/28/23 04:04:14 - 12:45:05 - 	NCV, Fold 3: 
+INFO - 01/28/23 04:04:14 - 12:45:05 - ********************
+INFO - 01/28/23 04:04:14 - 12:45:05 - Only one hyperparam setting, no optimization needed
+INFO - 01/28/23 04:04:14 - 12:45:05 - --------------------
+INFO - 01/28/23 04:04:14 - 12:45:05 - Which is always true, because we have BPMF
+INFO - 01/28/23 04:04:14 - 12:45:05 - --------------------
+INFO - 01/28/23 04:04:14 - 12:45:05 - ********************
+INFO - 01/28/23 04:04:14 - 12:45:05 - ********************
+INFO - 01/28/23 04:04:14 - 12:45:05 - building the BPMF model
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Attempting to acquire lock 47149021903024 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Lock 47149021903024 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Attempting to release lock 47149021903024 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Lock 47149021903024 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Attempting to acquire lock 47149021990768 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Lock 47149021990768 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Attempting to release lock 47149021990768 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 04:04:15 - 12:45:06 - Lock 47149021990768 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 04:04:15 - 12:45:06 - ********************
+INFO - 01/28/23 04:04:15 - 12:45:06 - done building the BPMF model
+INFO - 01/28/23 04:04:16 - 12:45:07 - Auto-assigning NUTS sampler...
+INFO - 01/28/23 04:04:16 - 12:45:07 - Initializing NUTS using adapt_diag...
+INFO - 01/28/23 04:04:20 - 12:45:11 - Sequential sampling (2 chains in 1 job)
+INFO - 01/28/23 04:04:20 - 12:45:11 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 05:25:44 - 14:06:36 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 4884 seconds.
+ERROR - 01/28/23 05:26:06 - 14:06:57 - There were 1667 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 05:26:06 - 14:06:57 - The acceptance probability does not match the target. It is 0.31857840420394357, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 05:26:06 - 14:06:57 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 05:26:06 - 14:06:57 - There were 1890 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 05:26:06 - 14:06:57 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 05:26:06 - 14:06:57 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 05:26:06 - 14:06:57 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 05:26:17 - 14:07:08 - --------------------
+INFO - 01/28/23 05:26:17 - 14:07:08 - Outer CV fold: 3 || run: 2
+INFO - 01/28/23 05:26:17 - 14:07:08 - --------------------
+INFO - 01/28/23 05:26:17 - 14:07:08 - Posterior predictive train RMSE: 0.41175
+INFO - 01/28/23 05:26:17 - 14:07:08 - Posterior predictive test RMSE:  1.53994
+INFO - 01/28/23 05:26:17 - 14:07:08 - Train/test difference:           1.12819
+INFO - 01/28/23 05:26:17 - 14:07:08 - --------------------
+INFO - 01/28/23 05:26:17 - 14:07:08 - ********************
+INFO - 01/28/23 05:26:17 - 14:07:08 - 		(Outer Fold 3) train RMSE is 0.4117489016862533.
+INFO - 01/28/23 05:26:17 - 14:07:08 - 		(Outer Fold 3) test RMSE is 1.539935967869085.
+INFO - 01/28/23 05:26:17 - 14:07:08 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 05:26:17 - 14:07:08 - ********************
+INFO - 01/28/23 05:26:17 - 14:07:08 - 	NCV, Fold 4: 
+INFO - 01/28/23 05:26:17 - 14:07:08 - ********************
+INFO - 01/28/23 05:26:17 - 14:07:08 - Only one hyperparam setting, no optimization needed
+INFO - 01/28/23 05:26:17 - 14:07:08 - --------------------
+INFO - 01/28/23 05:26:17 - 14:07:08 - Which is always true, because we have BPMF
+INFO - 01/28/23 05:26:17 - 14:07:08 - --------------------
+INFO - 01/28/23 05:26:17 - 14:07:08 - ********************
+INFO - 01/28/23 05:26:17 - 14:07:08 - ********************
+INFO - 01/28/23 05:26:17 - 14:07:08 - building the BPMF model
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to acquire lock 47148648360928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148648360928 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to release lock 47148648360928 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148648360928 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to acquire lock 47148472437536 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148472437536 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to release lock 47148472437536 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148472437536 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to acquire lock 47148791571504 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148791571504 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Attempting to release lock 47148791571504 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:18 - 14:07:09 - Lock 47148791571504 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 05:26:18 - 14:07:09 - ********************
+INFO - 01/28/23 05:26:18 - 14:07:09 - done building the BPMF model
+DEBUG - 01/28/23 05:26:19 - 14:07:10 - Attempting to acquire lock 47149243283488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:19 - 14:07:10 - Lock 47149243283488 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:19 - 14:07:10 - Attempting to release lock 47149243283488 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:19 - 14:07:10 - Lock 47149243283488 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 05:26:19 - 14:07:10 - Auto-assigning NUTS sampler...
+INFO - 01/28/23 05:26:19 - 14:07:10 - Initializing NUTS using adapt_diag...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 not acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock, waiting 0.05 seconds ...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 not acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock, waiting 0.05 seconds ...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 not acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock, waiting 0.05 seconds ...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 not acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock, waiting 0.05 seconds ...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 not acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock, waiting 0.05 seconds ...
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to acquire lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Attempting to release lock 47149017386096 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 05:26:21 - 14:07:12 - Lock 47149017386096 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 05:26:22 - 14:07:13 - Sequential sampling (2 chains in 1 job)
+INFO - 01/28/23 05:26:22 - 14:07:13 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 06:57:28 - 15:38:19 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 5465 seconds.
+ERROR - 01/28/23 06:57:49 - 15:38:40 - There were 773 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 06:57:49 - 15:38:40 - The acceptance probability does not match the target. It is 0.6492721389983003, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 06:57:49 - 15:38:40 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 06:57:49 - 15:38:40 - There were 1788 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 06:57:49 - 15:38:40 - The acceptance probability does not match the target. It is 0.5467700536931552, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 06:57:49 - 15:38:40 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 06:57:49 - 15:38:40 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 06:57:49 - 15:38:40 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 06:58:01 - 15:38:52 - --------------------
+INFO - 01/28/23 06:58:01 - 15:38:52 - Outer CV fold: 4 || run: 2
+INFO - 01/28/23 06:58:01 - 15:38:52 - --------------------
+INFO - 01/28/23 06:58:01 - 15:38:52 - Posterior predictive train RMSE: 0.46897
+INFO - 01/28/23 06:58:01 - 15:38:52 - Posterior predictive test RMSE:  1.73999
+INFO - 01/28/23 06:58:01 - 15:38:52 - Train/test difference:           1.27101
+INFO - 01/28/23 06:58:01 - 15:38:52 - --------------------
+INFO - 01/28/23 06:58:01 - 15:38:52 - ********************
+INFO - 01/28/23 06:58:01 - 15:38:52 - 		(Outer Fold 4) train RMSE is 0.4689748134056567.
+INFO - 01/28/23 06:58:01 - 15:38:52 - 		(Outer Fold 4) test RMSE is 1.7399857075600726.
+INFO - 01/28/23 06:58:01 - 15:38:52 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 06:58:01 - 15:38:52 - ********************
+INFO - 01/28/23 06:58:01 - 15:38:52 - 	NCV, Fold 5: 
+INFO - 01/28/23 06:58:01 - 15:38:52 - ********************
+INFO - 01/28/23 06:58:01 - 15:38:52 - Only one hyperparam setting, no optimization needed
+INFO - 01/28/23 06:58:01 - 15:38:52 - --------------------
+INFO - 01/28/23 06:58:01 - 15:38:52 - Which is always true, because we have BPMF
+INFO - 01/28/23 06:58:01 - 15:38:52 - --------------------
+INFO - 01/28/23 06:58:01 - 15:38:52 - ********************
+INFO - 01/28/23 06:58:01 - 15:38:52 - ********************
+INFO - 01/28/23 06:58:01 - 15:38:52 - building the BPMF model
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to acquire lock 47149241791056 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149241791056 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to release lock 47149241791056 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149241791056 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to acquire lock 47149240567600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149240567600 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to release lock 47149240567600 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149240567600 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to acquire lock 47149240426848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149240426848 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Attempting to release lock 47149240426848 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:02 - 15:38:53 - Lock 47149240426848 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 06:58:02 - 15:38:53 - ********************
+INFO - 01/28/23 06:58:02 - 15:38:53 - done building the BPMF model
+DEBUG - 01/28/23 06:58:03 - 15:38:54 - Attempting to acquire lock 47149469386064 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:03 - 15:38:54 - Lock 47149469386064 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:03 - 15:38:54 - Attempting to release lock 47149469386064 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:03 - 15:38:54 - Lock 47149469386064 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 06:58:03 - 15:38:54 - Auto-assigning NUTS sampler...
+INFO - 01/28/23 06:58:03 - 15:38:54 - Initializing NUTS using adapt_diag...
+DEBUG - 01/28/23 06:58:05 - 15:38:56 - Attempting to acquire lock 47148649425984 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:05 - 15:38:56 - Lock 47148649425984 acquired on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:05 - 15:38:56 - Attempting to release lock 47148649425984 on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+DEBUG - 01/28/23 06:58:05 - 15:38:56 - Lock 47148649425984 released on /home/vschram/.theano/compiledir_Linux-3.10-el7.x86_64-x86_64-with-glibc2.17-x86_64-3.8.12-64/.lock
+INFO - 01/28/23 06:58:06 - 15:38:57 - Sequential sampling (2 chains in 1 job)
+INFO - 01/28/23 06:58:06 - 15:38:57 - NUTS: [H, mu_h, chol_matrix_h, W, mu_w, chol_cov_matrix_w]
+INFO - 01/28/23 08:08:10 - 16:49:01 - Sampling 2 chains for 1_000 tune and 2_000 draw iterations (2_000 + 4_000 draws total) took 4204 seconds.
+ERROR - 01/28/23 08:08:32 - 16:49:23 - There were 551 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 08:08:32 - 16:49:23 - The acceptance probability does not match the target. It is 0.6649102097336433, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 08:08:32 - 16:49:23 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 08:08:32 - 16:49:23 - There were 2551 divergences after tuning. Increase `target_accept` or reparameterize.
+WARNING - 01/28/23 08:08:32 - 16:49:23 - The acceptance probability does not match the target. It is 0.11439978838594103, but should be close to 0.8. Try to increase the number of tuning steps.
+WARNING - 01/28/23 08:08:32 - 16:49:23 - The chain reached the maximum tree depth. Increase max_treedepth, increase target_accept or reparameterize.
+ERROR - 01/28/23 08:08:32 - 16:49:23 - The rhat statistic is larger than 1.4 for some parameters. The sampler did not converge.
+ERROR - 01/28/23 08:08:32 - 16:49:23 - The estimated number of effective samples is smaller than 200 for some parameters.
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - Outer CV fold: 5 || run: 2
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - Posterior predictive train RMSE: 0.57623
+INFO - 01/28/23 08:08:44 - 16:49:35 - Posterior predictive test RMSE:  2.08963
+INFO - 01/28/23 08:08:44 - 16:49:35 - Train/test difference:           1.51340
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - ********************
+INFO - 01/28/23 08:08:44 - 16:49:35 - 		(Outer Fold 5) train RMSE is 0.5762304384893745.
+INFO - 01/28/23 08:08:44 - 16:49:35 - 		(Outer Fold 5) test RMSE is 2.089630254450043.
+INFO - 01/28/23 08:08:44 - 16:49:35 - {'average_dev': 0, 'alpha': 2, 'h': 1}
+INFO - 01/28/23 08:08:44 - 16:49:35 - ********************
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
+INFO - 01/28/23 08:08:44 - 16:49:35 - -----per K-folds for BLEU-----
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse: 1.7252393769238445
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_std: 0.19955193506126168
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_train: 0.46528032767163197
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_train_std: 0.06101020488462887
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_dev: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_dev_std: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - median_alpha: 2.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
+INFO - 01/28/23 08:08:44 - 16:49:35 - -----Per model: ['BLEU']-----
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model rmse: 1.7252393769238445
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model rmse std: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model train: 0.46528032767163197
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model train std: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model dev: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - average model dev std: 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - median model alpha: 2.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse run: 1.6590636402741794
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse run std: 0.06617573664966514
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_train run: 0.4461398311293151
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_train run std: 0.019140496542316837
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_dev run : 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - final_rmse_dev run : 0.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - --------------------------------
+INFO - 01/28/23 08:08:44 - 16:49:35 - median_alpha run: 2.0
+INFO - 01/28/23 08:08:44 - 16:49:35 - #################################
